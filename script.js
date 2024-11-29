@@ -1,8 +1,8 @@
 
 function getComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3);
+    const randomNumber = Math.floor(Math.random() * 3); //generates random number
 
-    switch(randomNumber) {
+    switch(randomNumber) { //return the String associated with randomNumber
         case 0:
             return "scissors";
         case 1:
@@ -15,3 +15,10 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+    let choice = prompt("Choose rock, paper, or scissors");
+    console.log(choice);
+}
+
+getHumanChoice();
