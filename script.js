@@ -10,7 +10,6 @@ function playGame() {
         
     }
 
-
     function getHumanChoice() {
         let choice = prompt("Choose rock, paper, or scissors").toLowerCase(); //prompt window asking for user input
 
@@ -29,20 +28,16 @@ function playGame() {
             alert(`You both chose ${humanChoice}`);
             return "tie";
         }
-
-        // if (humanChoice != computerChoice) {
-            if (humanChoice === "rock" && computerChoice === "scissors" || humanChoice === "paper" && computerChoice === "rock" || humanChoice === "scissors" && computerChoice === "paper") {
-                
-                alert(`You win! ${humanChoice} beats ${computerChoice}`);
-                return "human";
-            } 
-            else {
-                alert(`Computer wins! ${computerChoice} beats ${humanChoice}`);
-                return "computer";
-                
-            }
+        if (humanChoice === "rock" && computerChoice === "scissors" || humanChoice === "paper" && computerChoice === "rock" || humanChoice === "scissors" && computerChoice === "paper") {
             
-        // }
+            alert(`You win! ${humanChoice} beats ${computerChoice}`);
+            return "human";
+        } 
+        else {
+            alert(`Computer wins! ${computerChoice} beats ${humanChoice}`);
+            return "computer";
+            
+        }
         
     }
 
